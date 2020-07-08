@@ -196,7 +196,7 @@ p.para {
   transform: scale(2);
 }
 
-. .site-main .skills-area .first-row .col-lg-4 > .single-brand:hover > i {
+.site-main .skills-area .first-row .col-lg-4 > .single-brand:hover > i {
   filter: opacity(1);
 }
 
