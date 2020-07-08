@@ -187,7 +187,6 @@ p.para {
 /* About Area */
 .site-main .about-area {
   padding: 8rem 5rem;
-  height: 100vh;
 }
 
 .site-main .about-area .text-section {
@@ -209,7 +208,6 @@ p.para {
 .site-main .skills-area {
   padding: 7rem 5rem;
   margin-bottom: 4rem;
-  height: 100vh;
 }
 .site-main .skills-area .skills-title {
   padding: 5rem 14rem;
