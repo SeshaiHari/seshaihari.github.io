@@ -1,4 +1,3 @@
-
 /*Variables CSS */
 html body {
   margin: 0%;
@@ -17,16 +16,15 @@ html body {
   --border-color: #201f1f17;
   --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   --shadow-color: 0px 10px 30px rgbs(118, 85, 225, 0.3);
-  --box-shadow: 0px 10px 30 px rgba(57, 58, 61, 0.205);
+  --box-shadow: 0px 10px 30px rgba(57, 58, 61, 0.205);
 }
-
-
-
-
 
 /*Global CSS*/
 .title-text {
-  font: normal bold 50px/ 73px "Roboto";
+  font: normal bold 50px/ 72px "Roboto";
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .button {
@@ -85,7 +83,19 @@ p.para {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 0.4s ease;
+}
 
+/*Main CSS*/
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -95,8 +105,8 @@ p.para {
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font: normal 500 15px/2px "Roboto";
+  text-transform: uppercase;
   padding: 1.7rem;
   color: var(--title-color);
 }
@@ -132,14 +142,13 @@ p.para {
 
 .site-main .site-banner .site-title h1 {
   font-size: 5rem;
-  line-height: 6rem;
 }
 .site-main .site-banner .site-title h4 {
   font-size: 1.5rem;
 }
 
 .site-main .site-banner .banner-image > img {
-  padding: 14rem 0;
+  padding: 7rem 0;
   width: 90rem;
 }
 
@@ -148,18 +157,14 @@ p.para {
   padding: 8rem 5rem;
 }
 
-.site-main.about-area.about-title h2 > span {
+.site-main .about-area .about-title h2 > span {
   display: block;
   font: normal bold 49px/ 60px "Roboto";
-  letter-spacing: 21px;
+  letter-spacing: 15px;
 }
 
 .site-main .about-area .about-title .paragraph > p {
-  padding: 0.2 rem 0;
-}
-
-.site-main .about-area .text-section {
-  margin-left: 100px;
+  padding: 0.4rem 0;
 }
 
 /* Skills Area */
@@ -174,7 +179,6 @@ p.para {
 }
 
 .site-main .skills-area .first-row .col-lg-4 > .single-brand {
-  /* border: 1px solid var(--border-color); */
   text-align: center;
   padding: 1.8rem 0rem;
   margin: 0.9rem 0;
@@ -183,17 +187,16 @@ p.para {
   cursor: pointer;
   transition: transform 0.4s ease;
 }
-.site-main .skills-area .first-row .col-lg-4 > .single-brand > img {
+.site-main .skills-area .first-row .col-lg-4 > .single-brand > i {
   filter: opacity(0.15);
-  width: 70%;
+  width: 50%;
 }
 
-.site-main .skilss-area .first-row .col-lg-4 > .single-brand:hover {
-  box-shadow: var(--box-shadow);
-  transform: scale(2.1);
+.site-main .skills-area .first-row .col-lg-4 > .single-brand > .fab {
+  transform: scale(2);
 }
 
-.site-main .skills-area .first-row .col-lg-4 > .single-brand:hover > img {
+. .site-main .skills-area .first-row .col-lg-4 > .single-brand:hover > i {
   filter: opacity(1);
 }
 
@@ -252,7 +255,7 @@ p.para {
   font-size: 35px;
 }
 
-.site-main .certifications-area .certifications {
+.site-main > .certifications-area .certifications {
   background: rgba(248, 252, 253, 0.973);
   padding: 2rem 0;
   width: 16rem;
@@ -260,6 +263,70 @@ p.para {
   transition: box-shadow 0.7s ease;
 }
 
-.site-main .certifications-area .certifications:hover {
+.site-main > .certifications-area .certifications:hover {
   box-shadow: var(--box-shadow);
+}
+
+/*Subscribe me */
+
+.site-main .subscribe-us-area .subscribe {
+  background: url(../images/subscribe-bg.png) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/30px "Roboto";
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  font-family: "Roboto";
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+  padding: 1.5rem 1rem;
+  width: 400px;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  font: normal 500 17px/20px "Roboto";
+}
+
+.site-main
+  .subscribe-us-area
+  .subscribe
+  form
+  .input-textbox
+  input::placeholder {
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: #000;
+  padding: 0.7rem 2rem;
+  margin-left: 150px;
+}
+
+/* Footer Area */
+
+footer.footer-area {
+  padding: 5rem 0;
+  background: url(../images/footer-bg.png) no-repeat;
+}
+footer.footer-area .social h5 {
+  font: normal 500 23px/ 30px "Roboto";
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i {
+  color: var(--primary-color);
 }

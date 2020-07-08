@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Seshai Hari | Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
     <!-- Google Font -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
     />
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <header class="header_area">
@@ -72,7 +77,7 @@
               <h4 class="title-text text-uppercase">
                 FrontEnd Web Developer, Programmer
               </h4>
-              <div class="side-button">
+              <div class="site-buttons">
                 <div class="d-flex flex-row flex-wrap">
                   <button
                     type="button"
@@ -112,7 +117,7 @@
                 />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 about-title">
               <div class="text-section">
                 <h2 class="text-uppercase pt-5">
                   <span>Let Me</span>
@@ -151,47 +156,56 @@
               <div class="first-row row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/html5.svg" alt="" />
+                    <!-- <img src="./images/html5.svg" alt="" /> -->
+                    <i class="fab fa-html5 fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/css3.svg" alt="" />
+                    <!-- <img src="./images/css3.svg" alt="" /> -->
+                    <i class="fab fa-css3-alt fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/js.svg" alt="" />
+                    <!-- <img src="./images/js.svg" alt="" /> -->
+                    <i class="fab fa-js-square fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/python.svg" alt="" />
+                    <!-- <img src="./images/python.svg" alt="" /> -->
+                    <i class="fab fa-python fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/java.svg" alt="" />
+                    <!-- <img src="./images/java.svg" alt="" /> -->
+                    <i class="fab fa-java fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/bootstrap.svg" alt="" />
+                    <!-- <img src="./images/bootstrap.svg" alt="" /> -->
+                    <i class="fab fa-bootstrap fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/terminal.svg" alt="" />
+                    <!-- <img src="./images/terminal.svg" alt="" /> -->
+                    <i class="fas fa-terminal fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/git.svg" alt="" />
+                    <!-- <img src="./images/git.svg" alt="" /> -->
+                    <i class="fab fa-git fa-5x"></i>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="single-brand">
-                    <img src="./images/docker.svg" alt="" />
+                    <!-- <img src="./images/docker.svg" alt="" /> -->
+                    <i class="fab fa-node-js fa-5x"></i>
                   </div>
                 </div>
               </div>
@@ -243,7 +257,7 @@
                   </div>
                   <div class="card-body text-center">
                     <h5 class="card-title text-uppercase font-roboto">
-                      Python for Everybody
+                      P4E
                     </h5>
                     <p class="card-text text-secondary">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -300,11 +314,71 @@
           </div>
         </div>
       </section>
+
+      <section class="subscribe-us-area">
+        <div class="container subscribe">
+          <div class="row">
+            <div class="col-lg-12 text-center subscribe-title">
+              <h4 class="text-uppercase">Get in Touch</h4>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                alias!
+              </p>
+            </div>
+          </div>
+          <div class="d-sm-flex justify-content-center">
+            <form action="" class="w-50">
+              <div class="row d-flex flex-row flex-wrap">
+                <div class="col input-textbox">
+                  <input
+                    type="text"
+                    id="txtemail"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col">
+                  <div class="btn-submit">
+                    <button type="submit" class="btn btn-success float-right">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="">
+          <div class="site-logo text-center py-4">
+            <a href="#">Seshai Hari</a>
+          </div>
+          <div class="social text-center">
+            <h5 class="text-uppercase">Follow me</h5>
+            <a href="#"><i class="fab fa-github-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <div class="copyrights text-center">
+            <p class="para">
+              Copyright ©2020, All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery JS -->
     <script src="./js/jquery.3.5.1.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
