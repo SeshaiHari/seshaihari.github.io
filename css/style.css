@@ -96,6 +96,7 @@ p.para {
 }
 
 /*Main CSS*/
+
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -125,6 +126,9 @@ p.para {
 }
 
 /* Banner Area */
+.site-mian .site-banner {
+  height: 100vh;
+}
 .site-main .site-banner .site-title h3 {
   padding-top: 35%;
   font-weight: 500;
@@ -142,35 +146,74 @@ p.para {
 
 .site-main .site-banner .site-title h1 {
   font-size: 5rem;
+  letter-spacing: 2px;
 }
 .site-main .site-banner .site-title h4 {
   font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .site-main .site-banner .banner-image > img {
-  padding: 7rem 0;
+  padding: 13rem 0;
+  margin-left: 3.5rem;
   width: 90rem;
+}
+/*Scroll Down */
+.scroll-down {
+  text-align: center;
+}
+.scroll {
+  font-size: 30px;
+  color: #000;
+
+  -webkit-animation: scrolling 1.5s ease infinite;
+  -moz-animation: scrolling 1.5s ease infinite;
+  -o-animation: scrolling 1.5s ease infinite;
+  animation: scrolling 1.5s ease infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 /* About Area */
 .site-main .about-area {
   padding: 8rem 5rem;
+  height: 100vh;
+}
+
+.site-main .about-area .text-section {
+  padding-top: 10rem;
 }
 
 .site-main .about-area .about-title h2 > span {
   display: block;
   font: normal bold 49px/ 60px "Roboto";
-  letter-spacing: 15px;
+  letter-spacing: 14px;
 }
 
 .site-main .about-area .about-title .paragraph > p {
   padding: 0.4rem 0;
+  font: normal 18px/ 50px "Roboto";
 }
 
 /* Skills Area */
 .site-main .skills-area {
-  padding: 1rem 20rem;
+  padding: 7rem 5rem;
   margin-bottom: 4rem;
+  height: 100vh;
+}
+.site-main .skills-area .skills-title {
+  padding: 5rem 14rem;
+  letter-spacing: 3px;
 }
 
 .site-main .skills-area .first-row .col-lg-4 {
@@ -202,6 +245,7 @@ p.para {
 
 .site-main .skills-area .experience-area {
   padding-left: 1rem;
+  height: ;
 }
 
 .site-main .skills-area .experience-area span {
@@ -209,7 +253,6 @@ p.para {
 }
 
 .site-main .skills-area .experience-area .years-area {
-  background: url(../images/skill-info-bg.png) no-repeat 45px 20px;
   padding: 2rem 0;
   width: 40rem;
   height: 18rem;
@@ -222,8 +265,8 @@ p.para {
   left: -190px;
   top: 0%;
   background: #e029290a;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin-left: 340px;
   z-index: -1;
 }
@@ -238,7 +281,9 @@ p.para {
 }
 
 .site-main .skills-area .experience-area .call-area {
-  padding-left: 10rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
 }
 
 /* Certifications area */
@@ -268,7 +313,9 @@ p.para {
 }
 
 /*Subscribe me */
-
+.site-main .subscribe-us-area {
+  padding-top: 10px;
+}
 .site-main .subscribe-us-area .subscribe {
   background: url(../images/subscribe-bg.png) no-repeat;
   padding: 10rem 0;
@@ -318,11 +365,11 @@ footer.footer-area {
   background: url(../images/footer-bg.png) no-repeat;
 }
 footer.footer-area .social h5 {
-  font: normal 500 23px/ 30px "Roboto";
+  font: normal 500 20px/ 30px "Roboto";
 }
 
 footer.footer-area .social a > i {
-  font-size: 22px;
+  font-size: 45px;
   padding: 2rem;
   color: var(--border-color);
 }
